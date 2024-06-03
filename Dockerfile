@@ -1,4 +1,4 @@
-FROM openjdk:21-ea-17-slim
+FROM openjdk:17-ea-slim
 EXPOSE 8080
 RUN mkdir /opt/service
 COPY target/poc-0.0.1-SNAPSHOT.jar /opt/service/app.jar
