@@ -5,4 +5,4 @@ AlianzaFiduciariaValores,com.alianzafiduciaria.poc.service,ClienteService,5,59,1
 AlianzaFiduciariaValores,com.alianzafiduciaria.poc.model,Cliente,161,135,39,15,1,8,30,15,3,15
 AlianzaFiduciariaValores,com.alianzafiduciaria.poc.mapper,IClienteMapper,0,5,0,0,0,1,0,1,0,1
 AlianzaFiduciariaValores,com.alianzafiduciaria.poc.mapper,IClienteMapperImpl,0,105,1,9,0,29,1,8,0,4
-AlianzaFiduciariaValores,com.alianzafiduciaria.poc,AlianzaFiduciariaValoresApplication,5,41,0,0,2,9,1,2,1,2
+AlianzaFiduciariaValores,com.alianzafiduciaria.poc,AlianzaFiduciariaValoresApplication,5,46,0,0,2,10,1,2,1,2

@@ -25,9 +25,10 @@ import org.springframework.web.filter.CorsFilter;
 <span class="fc" id="L25">         config.setAllowCredentials(true);</span>
 <span class="fc" id="L26">         config.setAllowedOrigins(Collections.singletonList(&quot;*&quot;));</span>
 <span class="fc" id="L27">         config.setAllowedHeaders(Collections.singletonList(&quot;*&quot;));</span>
-<span class="fc" id="L28">         config.setAllowedMethods(Arrays.stream(HttpMethod.values()).map(HttpMethod::name).collect(Collectors.toList()));</span>
-<span class="fc" id="L29">         source.registerCorsConfiguration(&quot;/**&quot;, config);</span>
-<span class="fc" id="L30">         return new CorsFilter(source);</span>
+<span class="fc" id="L28">         config.setAllowedOriginPatterns(Collections.singletonList(&quot;*&quot;));</span>
+<span class="fc" id="L29">         config.setAllowedMethods(Arrays.stream(HttpMethod.values()).map(HttpMethod::name).collect(Collectors.toList()));</span>
+<span class="fc" id="L30">         source.registerCorsConfiguration(&quot;/**&quot;, config);</span>
+<span class="fc" id="L31">         return new CorsFilter(source);</span>
      }
 
 }

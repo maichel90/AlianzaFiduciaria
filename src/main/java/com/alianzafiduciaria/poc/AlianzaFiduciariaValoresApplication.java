@@ -25,6 +25,7 @@ public class AlianzaFiduciariaValoresApplication {
          config.setAllowCredentials(true);
          config.setAllowedOrigins(Collections.singletonList("*"));
          config.setAllowedHeaders(Collections.singletonList("*"));
+         config.setAllowedOriginPatterns(Collections.singletonList("*"));
          config.setAllowedMethods(Arrays.stream(HttpMethod.values()).map(HttpMethod::name).collect(Collectors.toList()));
          source.registerCorsConfiguration("/**", config);
          return new CorsFilter(source);
