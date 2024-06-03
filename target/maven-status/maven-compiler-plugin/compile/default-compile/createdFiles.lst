@@ -1,0 +1,8 @@
+com\alianzafiduciaria\poc\service\ClienteService.class
+com\alianzafiduciaria\poc\AlianzaFiduciariaValoresApplication.class
+com\alianzafiduciaria\poc\mapper\IClienteMapper.class
+com\alianzafiduciaria\poc\mapper\IClienteMapperImpl.class
+com\alianzafiduciaria\poc\repository\ClienteRepository.class
+com\alianzafiduciaria\poc\controller\ClienteController.class
+com\alianzafiduciaria\poc\model\Cliente.class
+com\alianzafiduciaria\poc\dto\ClienteDTO.class

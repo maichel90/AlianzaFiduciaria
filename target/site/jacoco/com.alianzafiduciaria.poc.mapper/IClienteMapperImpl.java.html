@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>IClienteMapperImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">AlianzaFiduciariaValores</a> &gt; <a href="index.source.html" class="el_package">com.alianzafiduciaria.poc.mapper</a> &gt; <span class="el_source">IClienteMapperImpl.java</span></div><h1>IClienteMapperImpl.java</h1><pre class="source lang-java linenums">package com.alianzafiduciaria.poc.mapper;
+
+import com.alianzafiduciaria.poc.dto.ClienteDTO;
+import com.alianzafiduciaria.poc.model.Cliente;
+import java.util.ArrayList;
+import java.util.List;
+import javax.annotation.processing.Generated;
+
+@Generated(
+    value = &quot;org.mapstruct.ap.MappingProcessor&quot;,
+    date = &quot;2024-06-03T13:29:26-0500&quot;,
+    comments = &quot;version: 1.5.5.Final, compiler: javac, environment: Java 17.0.11 (Eclipse Adoptium)&quot;
+)
+<span class="fc" id="L14">public class IClienteMapperImpl implements IClienteMapper {</span>
+
+    @Override
+    public ClienteDTO entityToDto(Cliente cliente) {
+<span class="fc bfc" id="L18" title="All 2 branches covered.">        if ( cliente == null ) {</span>
+<span class="fc" id="L19">            return null;</span>
+        }
+
+<span class="fc" id="L22">        ClienteDTO clienteDTO = new ClienteDTO();</span>
+
+<span class="fc" id="L24">        clienteDTO.setSharedKey( cliente.getSharedKey() );</span>
+<span class="fc" id="L25">        clienteDTO.setBussinesId( cliente.getBussinesId() );</span>
+<span class="fc" id="L26">        clienteDTO.setEmail( cliente.getEmail() );</span>
+<span class="fc" id="L27">        clienteDTO.setPhone( cliente.getPhone() );</span>
+<span class="fc" id="L28">        clienteDTO.setCreateDate( cliente.getCreateDate() );</span>
+<span class="pc bpc" id="L29" title="1 of 2 branches missed.">        if ( cliente.getRemoved() != null ) {</span>
+<span class="fc" id="L30">            clienteDTO.setRemoved( cliente.getRemoved() );</span>
+        }
+
+<span class="fc" id="L33">        return clienteDTO;</span>
+    }
+
+    @Override
+    public Cliente dtoToEntity(ClienteDTO clienteDTO) {
+<span class="fc bfc" id="L38" title="All 2 branches covered.">        if ( clienteDTO == null ) {</span>
+<span class="fc" id="L39">            return null;</span>
+        }
+
+<span class="fc" id="L42">        Cliente cliente = new Cliente();</span>
+
+<span class="fc" id="L44">        cliente.setSharedKey( clienteDTO.getSharedKey() );</span>
+<span class="fc" id="L45">        cliente.setBussinesId( clienteDTO.getBussinesId() );</span>
+<span class="fc" id="L46">        cliente.setEmail( clienteDTO.getEmail() );</span>
+<span class="fc" id="L47">        cliente.setPhone( clienteDTO.getPhone() );</span>
+<span class="fc" id="L48">        cliente.setCreateDate( clienteDTO.getCreateDate() );</span>
+<span class="fc" id="L49">        cliente.setRemoved( clienteDTO.isRemoved() );</span>
+
+<span class="fc" id="L51">        return cliente;</span>
+    }
+
+    @Override
+    public List&lt;ClienteDTO&gt; entityToDtoList(List&lt;Cliente&gt; clienteList) {
+<span class="fc bfc" id="L56" title="All 2 branches covered.">        if ( clienteList == null ) {</span>
+<span class="fc" id="L57">            return null;</span>
+        }
+
+<span class="fc" id="L60">        List&lt;ClienteDTO&gt; list = new ArrayList&lt;ClienteDTO&gt;( clienteList.size() );</span>
+<span class="fc bfc" id="L61" title="All 2 branches covered.">        for ( Cliente cliente : clienteList ) {</span>
+<span class="fc" id="L62">            list.add( entityToDto( cliente ) );</span>
+<span class="fc" id="L63">        }</span>
+
+<span class="fc" id="L65">        return list;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
