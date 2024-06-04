@@ -1,8 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-AlianzaFiduciariaValores,com.alianzafiduciaria.poc.controller,ClienteController,40,3,2,0,8,1,4,1,3,1
-AlianzaFiduciariaValores,com.alianzafiduciaria.poc.dto,ClienteDTO,134,128,36,14,0,8,27,15,2,15
-AlianzaFiduciariaValores,com.alianzafiduciaria.poc.service,ClienteService,5,59,1,5,1,15,1,6,0,4
-AlianzaFiduciariaValores,com.alianzafiduciaria.poc.model,Cliente,161,135,39,15,1,8,30,15,3,15
-AlianzaFiduciariaValores,com.alianzafiduciaria.poc.mapper,IClienteMapper,0,5,0,0,0,1,0,1,0,1
-AlianzaFiduciariaValores,com.alianzafiduciaria.poc.mapper,IClienteMapperImpl,0,105,1,9,0,29,1,8,0,4
-AlianzaFiduciariaValores,com.alianzafiduciaria.poc,AlianzaFiduciariaValoresApplication,5,42,0,0,2,9,1,2,1,2
